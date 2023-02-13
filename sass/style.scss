@@ -8,11 +8,6 @@ $color-footer: #D0DBE1;
 
 /* Navigation */
 
-.navbar {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 /* Carousel */
 
 .carousel-inner, .carousel-item {
@@ -126,5 +121,85 @@ footer {
     }
     .card-container:last-child {
         margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .highlights {
+        .card-container {
+            margin-bottom: 24px;
+        }
+    }
+    
+    .offert {
+        padding-bottom: 6rem!important;
+    }
+}
+
+/* Splash && Navbar */
+
+.navbar {
+    background-color: #00000077;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 60px;
+    align-items: flex-start;
+    .navbar-brand, .nav-link {
+        color: $color-light!important;
+    }
+    .navbar-brand {
+        margin-right: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .container {
+        height: 100%;
+    }
+    .container > * {
+        height: 100%;
+    }
+    #mobile-menu ul {
+        height: 100%;
+    }
+    a {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-group, .btn {
+        height: 100%;
+        border-radius: 0;
+        background-color: unset;
+        border: unset;
+    }
+
+    a, button {
+        background-color: #00000000;
+        transition: all .4s ease;
+        position: relative;
+    }
+    a:hover, button:hover {
+        background-color: #000000aa;
+    }
+    a::before, .btn::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 0;
+        width: 0;
+        background-color: #fad390;
+        filter: blur(3px);
+        transition: all .4s ease;
+        opacity: 0;
+    }
+    a:hover::before, .btn:hover::before {
+        height: 3px;
+        width: 95%;
+        opacity: 0.7;
+        bottom: -2px;
     }
 }
