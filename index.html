@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bootstrap</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+            <a href="#" class="navbar-brand">
+                HARBINGER
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mobile-menu">
+                <ul class="navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Clothing</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Outfits</a>
+                            <a class="dropdown-item" href="#">Tops</a>
+                            <a class="dropdown-item" href="#">Bottoms</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Lingerie</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Shoes</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Accessories</a>
+                    </li>
+                </ul>
+                <div class="btn-group ms-auto" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Cart
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <i class="fa-solid fa-user"></i>
+                        Account
+                    </button>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="main-slider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="https://i.postimg.cc/Hkjc8SLN/1.jpg" alt="image">
+                    <div class="carousel-caption">
+                        <h4>NEW ARRIVAL</h4>
+                        <h3>Nulla maximus</h3>
+                        <a class="btn btn-primary" href="#">Shop now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="https://i.postimg.cc/L4TnCdY7/2.jpg" alt="image">
+                    <div class="carousel-caption">
+                        <h4>FRESH COLLECTION</h4>
+                        <h3>Abiga tabalaka</h3>
+                        <a class="btn btn-primary" href="#">Shop now</a>                    
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="https://i.postimg.cc/5yny6vW1/3.jpg" alt="image">
+                    <div class="carousel-caption">
+                        <h4>FASHION TREND</h4>
+                        <h3>Ernesto lex</h3>
+                        <a class="btn btn-primary" href="#">Shop now</a>                    
+                    </div>
+                </div>                
+            </div>
+            <a class="carousel-control-prev" href="#main-slider" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#main-slider" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+        
+        <section class="products py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h2>Brands</h2>
+                        <div class="list-group flex-sm-row flex-lg-column">
+                            <a class="list-group-item list-group-item-action" href="#">
+                                Vivamus
+                            </a>
+                            <a class="list-group-item list-group-item-action" href="#">
+                                Etiam
+                            </a>
+                            <a class="list-group-item list-group-item-action" href="#">
+                                Praesent
+                            </a>
+                            <a class="list-group-item list-group-item-action" href="#">
+                                Aenean
+                            </a>
+                            <a class="list-group-item list-group-item-action" href="#">
+                                Vestibulum
+                            </a>                            
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <h2>New arrivals</h2>
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="https://i.postimg.cc/sD60Q9Y0/4.jpg" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5>
+                                            Phasellus rhoncus
+                                        </h5>
+                                        <a href="#" class="btn btn-light">
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 d-lg-none">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="https://i.postimg.cc/GtbSYXg6/5.jpg" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5>
+                                            Displea nonus
+                                        </h5>
+                                        <a href="#" class="btn btn-light">
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="https://i.postimg.cc/ZYLQZhCm/6.jpg" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5>
+                                            Sed tincidunt
+                                        </h5>
+                                        <a href="#" class="btn btn-light">
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="https://i.postimg.cc/3N9fZ2PN/7.jpg" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5>
+                                            Suspendisse
+                                        </h5>
+                                        <a href="#" class="btn btn-light">
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="highlights py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3 justify-content-center align-items-center">
+                            <img src="https://i.postimg.cc/52D7p4kB/8.jpg" alt="">
+                            <div class="card-body position-absolute">
+                                <h5>Winter sale</h5>
+                                <a href="#" class="btn btn-primary">
+                                    See details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-3 justify-content-center align-items-center">
+                            <img src="https://i.postimg.cc/kXXpghbb/9.jpg" alt="">
+                            <div class="card-body position-absolute">
+                                <h5>Lookbook</h5>
+                                <a href="#" class="btn btn-primary">
+                                    Get inspired
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3 justify-content-center align-items-center">
+                            <img src="https://i.postimg.cc/sXrndnz1/10.jpg" alt="">
+                            <div class="card-body position-absolute">
+                                <h5>News and ideas</h5>
+                                <a href="#" class="btn btn-primary">
+                                    Go to Harbinger blog
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="offert py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card p-3 mb-3">
+                            <div class="row">
+                                <div class="col-md-2 d-none d-md-block">
+                                    <i class="fa-solid fa-truck pt-4 ps-3"></i>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-body">
+                                        <h3>Free shipping</h3>
+                                        <p>
+                                            Curabitur eget ligula nisl.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-3 mb-3">
+                            <div class="row">
+                                <div class="col-md-2 d-none d-md-block">
+                                    <i class="fa-solid fa-money-bill-wave pt-4 ps-3"></i>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-body">
+                                        <h3>60-day refund</h3>
+                                        <p>
+                                            Curabitur eget ligula nisl.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-3 mb-3">
+                            <div class="row">
+                                <div class="col-md-2 d-none d-md-block">
+                                    <i class="fa-solid fa-life-ring pt-4 ps-3"></i>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-body">
+                                        <h3>24/7 support</h3>
+                                        <p>
+                                            Curabitur eget ligula nisl.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>                    
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 order-md-2">
+                        <div class="box px-5 mb-3">
+                            <h3>HARBINGER</h3>
+                            <p>Vestibulum varius neque non posuere dapibus.</p>
+                            <ul class="socials d-flex">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                        Twitter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-youtube"></i>
+                                        Youtube
+                                    </a>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 order-md-3">
+                        <div class="box px-5 mb-3">
+                            <h3>Contact us</h3>
+                            <address>
+                                2795 Cunningham Court<br>
+                                Rochester Hills 48306<br>
+                                Michigan<br>
+                                <a href="mailto:support@company.com" class="email">
+                                    support@company.com
+                                </a>
+                            </address>
+                        </div>                    
+                    </div>
+                    <div class="col-md-4 order-md-1">
+                        <div class="box px-5 mb-3">
+                            <h3>Newsletter</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                            <form>
+                              <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                              </div>
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>                    
+                    </div>                    
+                </div>
+            </div>
+        </section>
+        
+        <footer class="py-3">
+            <div class="container">
+                <div class="row justify-content-around">
+                    <div class="col-md-4 logo">
+                        &copy; Harbinger Ltd.
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="links flex-column flex-md-row justify-content-end">
+                            <li class="">
+                                <a href="#">About</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Delivery</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Returns</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Privacy policy</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Terms and conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

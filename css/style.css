@@ -1,0 +1,83 @@
+/* Variables */
+/* Global */
+/* Navigation */
+.navbar {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Carousel */
+.carousel-inner, .carousel-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Products */
+.card img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Highlights */
+/* Offert */
+/* Contact */
+.contact {
+  background-color: #eff2f5;
+}
+
+.socials {
+  list-style-type: none;
+  padding: 0;
+}
+.socials li {
+  font-size: 0;
+  margin-right: 10px;
+}
+.socials i {
+  font-size: 16px;
+  color: #000000;
+}
+
+.email {
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .contact .box {
+    margin-bottom: 50px !important;
+  }
+}
+/* Footer */
+footer {
+  background-color: #D0DBE1;
+}
+footer .links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+footer .links li {
+  margin-right: 10px;
+}
+footer .links a {
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  footer * {
+    text-align: center;
+  }
+  footer .logo {
+    margin-bottom: 1rem;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBTUEsV0FBQTtBQUVBLGVBQUE7QUFFQTtFQUNJLGtCQUFBO0VBQ0EsbUJBQUE7QUNOSjs7QURTQSxhQUFBO0FBRUE7RUFDSSxhQUFBO0FDUEo7O0FEVUE7RUFDSSxZQUFBO0VBQ0Esb0JBQUE7S0FBQSxpQkFBQTtBQ1BKOztBRFVBLGFBQUE7QUFFQTtFQUNJLFdBQUE7RUFDQSxhQUFBO0VBQ0Esb0JBQUE7S0FBQSxpQkFBQTtBQ1JKOztBRFdBLGVBQUE7QUFFQSxXQUFBO0FBRUEsWUFBQTtBQUVBO0VBQ0kseUJBdENVO0FDMkJkOztBRGNBO0VBQ0kscUJBQUE7RUFDQSxVQUFBO0FDWEo7QURhSTtFQUNJLFlBQUE7RUFDQSxrQkFBQTtBQ1hSO0FEY0k7RUFDSSxlQUFBO0VBQ0EsY0FyREs7QUN5Q2I7O0FEZ0JBO0VBQ0kscUJBQUE7QUNiSjs7QURnQkE7RUFDSTtJQUNJLDhCQUFBO0VDYk47QUFDRjtBRGdCQSxXQUFBO0FBRUE7RUFDSSx5QkFwRVc7QUNxRGY7QURpQkk7RUFDSSxxQkFBQTtFQUNBLFVBQUE7RUFDQSxTQUFBO0VBQ0EsYUFBQTtBQ2ZSO0FEa0JJO0VBQ0ksa0JBQUE7QUNoQlI7QURtQkk7RUFDSSxxQkFBQTtBQ2pCUjs7QURxQkE7RUFDSTtJQUNJLGtCQUFBO0VDbEJOO0VEcUJFO0lBQ0ksbUJBQUE7RUNuQk47QUFDRiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */

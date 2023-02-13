@@ -1,0 +1,99 @@
+/* Variables */
+
+$color-dark: #000000;
+$color-light: #eff2f5;
+$color-footer: #D0DBE1;
+
+/* Global */
+
+/* Navigation */
+
+.navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Carousel */
+
+.carousel-inner, .carousel-item {
+    height: 100vh;    
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Products */
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Highlights */
+
+/* Offert */
+
+/* Contact */
+
+.contact {
+    background-color: $color-light;
+}
+
+.socials {
+    list-style-type: none;   
+    padding: 0;
+    
+    li {
+        font-size: 0;
+        margin-right: 10px;
+    }
+    
+    i {
+        font-size: 16px;
+        color: $color-dark;
+    }
+}
+
+.email {
+    text-decoration: none;    
+}
+
+@media (max-width: 767px) {
+    .contact .box {
+        margin-bottom: 50px!important;    
+    }    
+}
+
+/* Footer */
+
+footer {
+    background-color: $color-footer;
+    
+    .links {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    
+    .links li {
+        margin-right: 10px;
+    }
+    
+    .links a {
+        text-decoration: none;    
+    }
+}
+
+@media (max-width: 767px) {
+    footer * {
+        text-align: center;    
+    }
+    
+    footer .logo {
+        margin-bottom: 1rem;    
+    }
+}
