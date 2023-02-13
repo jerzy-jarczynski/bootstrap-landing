@@ -97,3 +97,34 @@ footer {
         margin-bottom: 1rem;    
     }
 }
+
+/* Additional styling ~ RWD */
+
+.products {
+    .brands {
+        margin-bottom: 48px;
+        h2 {
+            margin-bottom: 24px;
+        }
+    }
+    .cards {
+        h2 {
+            margin-bottom: 24px;
+        }
+        .card-container {
+            margin-bottom: 48px;
+        }
+        .card-container:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.highlights {
+    .card-container {
+        margin-bottom: 48px;
+    }
+    .card-container:last-child {
+        margin-bottom: 0;
+    }
+}
