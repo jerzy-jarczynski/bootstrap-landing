@@ -366,3 +366,25 @@ footer {
   }  
 }
 
+/* Carousel */
+
+.carousel-control::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: calc(100vw / 6);
+  z-index: -1;
+  background: rgb(0,0,0);
+}
+
+.carousel-control-prev::before {
+  left: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.carousel-control-next::before {
+  right: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+}
