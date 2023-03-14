@@ -1,22 +1,54 @@
 {
   'use strict';
 
-  /* SOURCE */
-  /* https://webgolovolomki.com/en/how-to-add-a-css-class-on-scroll/ */
+  const navbarSticky = function() {
 
-  let scrollpos = window.scrollY;
+    /* SOURCE */
+    /* https://webgolovolomki.com/en/how-to-add-a-css-class-on-scroll/ */
 
-  const header = document.querySelector(".navbar");
-  const scrollChange = 100;
+    let scrollpos = window.scrollY;
 
-  const add_class_on_scroll = () => header.classList.add("bg-dark");
-  const remove_class_on_scroll = () => header.classList.remove("bg-dark");
+    const header = document.querySelector('.navbar');
+    const scrollChange = 100;
 
-  window.addEventListener('scroll', function() { 
-    scrollpos = window.scrollY;
+    const add_class_on_scroll = () => header.classList.add('bg-dark');
+    const remove_class_on_scroll = () => header.classList.remove('bg-dark');
 
-    if (scrollpos >= scrollChange) { add_class_on_scroll(); }
-    else { remove_class_on_scroll(); }
-    
-  });
+    window.addEventListener('scroll', function() { 
+      scrollpos = window.scrollY;
+
+      if (scrollpos >= scrollChange) { add_class_on_scroll(); }
+      else { remove_class_on_scroll(); }
+      
+    });
+  };
+
+  navbarSticky();
+
+  const highlightsHover = function() {
+    const highlightsContainer = document.querySelector('.highlights');
+    const highlightsCards = highlightsContainer.querySelectorAll('.card');
+
+    for (const card of highlightsCards) {
+      const cardPosition = card.getAttribute('data-position');
+
+      card.addEventListener('mouseenter', (event) => {
+        event.preventDefault();
+
+        if (!highlightsContainer.classList.contains(cardPosition)) {
+          highlightsContainer.classList.add(cardPosition);
+        }
+      });
+
+      card.addEventListener('mouseleave', (event) => {
+        event.preventDefault();
+
+        if (highlightsContainer.classList.contains(cardPosition)) {
+          highlightsContainer.classList.remove(cardPosition);
+        }
+      });
+    }
+  };
+
+  highlightsHover();
 }
