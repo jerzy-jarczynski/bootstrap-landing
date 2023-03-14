@@ -51,4 +51,31 @@
   };
 
   highlightsHover();
+
+  const offertHover = () => {
+    const offertContainer = document.querySelector('.offert');
+    const offertCards = offertContainer.querySelectorAll('.card');
+
+    for (const card of offertCards) {
+      const cardPosition = card.getAttribute('data-position');
+
+      card.addEventListener('mouseenter', (event) => {
+        event.preventDefault();
+
+        if (!offertContainer.classList.contains(cardPosition)) {
+          offertContainer.classList.add(cardPosition);
+        }
+      });
+
+      card.addEventListener('mouseleave', (event) => {
+        event.preventDefault();
+
+        if (offertContainer.classList.contains(cardPosition)) {
+          offertContainer.classList.remove(cardPosition);
+        }
+      });
+    }
+  };
+
+  offertHover();
 }

@@ -727,3 +727,96 @@ footer {
     }
   }
 }
+
+.offert {
+  .col-md-4 {
+    perspective: 500px;
+    perspective-origin: 50% 50%;
+    transition: all .2s ease;
+
+    .card {
+      filter: drop-shadow(5px 5px 10px #4449);
+      transition: inherit;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+
+  .offert.card-left {
+
+    .left-container {
+      width: 40%;
+      transform: scale(120%);
+    }
+
+    .middle-container {
+      width: 30%;
+
+      .card {
+        transform: scale3d(1, 1, 1) rotateX(0deg) rotateY(-40deg) rotateZ(0deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+      }
+    }
+
+    .right-container {
+      width: 30%;
+
+      .card {
+        transform: scale3d(1, 1, 1) rotateX(0deg) rotateY(-30deg) rotateZ(0deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+      }
+    }
+
+  }
+
+  .offert.card-middle {
+
+    .left-container {
+      width: 30%;
+
+      .card {
+        transform: scale3d(1, 1, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+      }
+    }
+
+    .middle-container {
+      width: 40%;
+      transform: scale(120%);
+    }
+
+    .right-container {
+      width: 30%;
+
+      .card {
+        transform: scale3d(1, 1, 1) rotateX(0deg) rotateY(-40deg) rotateZ(0deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+      }
+
+    }
+
+  }
+
+  .offert.card-right {
+
+    .left-container {
+      width: 30%;
+
+      .card {
+        transform: scale3d(1, 1, 1) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+      }
+    }
+
+    .middle-container {
+      width: 30%;
+
+      .card {
+        transform: scale3d(1, 1, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+      }
+    }
+
+    .right-container {
+      width: 40%;
+      transform: scale(120%);
+    }
+
+  }
+
+}
